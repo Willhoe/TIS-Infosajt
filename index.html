@@ -10,8 +10,14 @@
 <link rel="stylesheet" href="hhtps://fonts.googleapis.com/css?family=Raleway" />
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; font-weight: bold;}
-.w3-bar,h1,button {font-family: "Raleway", sans-serif; font-weight: bold;}
+.w3-bar,h1,button {font-family: "Raleway", sans-serif; font-weight: bold; height: 50px;}
 .fa-anchor,.fa-coffee {font-size:200px}
+.dropdown {  float: left; overflow: hidden;}
+.dropdown .dropbtn {font-size: inherit; border: none; outline: none; background-color: inherit; font-family: inherit; margin: 0;}
+.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+.dropdown-content a {float: none; color: #1e73be; padding: 12px 16px; text-decoration: none; display: block; text-align: left;}
+.dropdown-content a:hover {background-color: #f9f9f9;}
+.dropdown:hover .dropdown-content {display: block;}
 </style>
 <body>
 
@@ -19,20 +25,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; font-weight: bold;}
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card w3-left-align w3-large">
     <img src="https://github.com/Willhoe/TIS-Infosajt/blob/master/TIS-logo-header-pos.png?raw=true" class="w3-bar-item w3-button" style="height: 50px;">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="nyelev.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;">Ny Elev</a>
     <a href="blanketter.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;">Blanketter</a>
     <a href="lanedator.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;">Lånedator</a>
     <a href="lokaler.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;">Lokaler</a>
     <a href="elevskap.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;">Elevskåp</a>
     <a href="vardnadshavare.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be">Vårdnadshavare</a>
-    <a href="kontaktinfo" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be">Kontaktinfo</a>
-    <button class="dropbtn w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be;" onclick="myFunction()">Frånvaro
+    <a href="kontaktinfo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue" style="color: #1e73be">Kontaktinfo</a>
+      <button class="dropbtn w3-bar-item w3-padding-large w3-button w3-hide-small w3-hover-blue" style="color: #1e73be" onclick="myFunction()">Frånvaro
       <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="sjukfranvaro">Sjukfrånvaro</a>
-      <a href="ledighet.html">Ledighet</a>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="sjukfranvaro.html">Sjukanmälan</a>
+        <a href="ledighet.html">Ledighet</a>
+      </div>
     </div>
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
